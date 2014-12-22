@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Tips"
+    android:fadingEdge="horizontal|vertical"
+    android:background="@android:color/black" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+	    android:layout_marginRight="@dimen/feed_item_margin"
+	    android:layout_marginTop="@dimen/feed_item_margin_top"
+	    android:scrollbarStyle="insideOverlay"
+	    android:paddingBottom="8dp"
+	    android:fadeScrollbars="true"
+	    android:background="@drawable/bg_parent_rounded_corner"
+        android:fadingEdge="horizontal|vertical"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+        android:id="@+id/imageViewTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" 
+            android:padding="5dp"
+            />
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="103dp"
+            android:visibility="visible" />
+        
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/imageView1"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:padding="5dp"
+            android:layout_below="@+id/imageViewTemp"
+            />
+        
+            <TextView
+            android:id="@+id/textHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:singleLine="false"
+            android:text=""
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/textContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textHeading"
+            android:singleLine="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <!-- <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_weight="100"
+                android:onClick="onShare"
+                android:text="Share" /> -->
+
+        
+        
+    </RelativeLayout>
+    
+</ScrollView>
+
+</RelativeLayout>

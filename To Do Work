@@ -1,0 +1,8 @@
+What's Next---
+1. Dialog to appear if new App Version comes
+	by checking the VerValue in App and VerValueQB from QuickBlox and compare which if VerValueQB is greater.
+
+
+Problems to solve---
+1. If user reinstalls the app, 
+     Check if user id already exist on Quickblox.
